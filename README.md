@@ -7,6 +7,7 @@ To run example clone repo, cd into examples and run yarn start
 
 Example:
 
+<div>
 import useWebp  from 'react-use-webp';
 
 const App = () => {
@@ -22,3 +23,4 @@ const App = () => {
 };
 
 ReactDOM.render(<App />, document.getElementById('root'));
+</div>
