@@ -10,8 +10,8 @@ To run example clone repo, cd into examples and run yarn start
 Example:
 
 
-<h5>import useWebp  from 'react-use-webp'</h5>
+<h4>import useWebp  from 'react-use-webp'</h4>
 
-<h5>const { supportsWebP } = useWebp()<h5>
+<h4>const { supportsWebP } = useWebp()</h4>
 
 supportsWebp is boolean and can be used with a turnary to return differernt classNames in this example you would have two css classes one named webp-background and another named jpg-background each serving a background image of the respective type
