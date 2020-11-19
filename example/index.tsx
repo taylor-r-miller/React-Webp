@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className={supportsWebP ? 'bg-webp' : 'bg-jpg'}>
-      <h1>{`Background image is in ${supportsWebP ? 'webp' : 'jpg'} format` }</h1>
+      <h1>{`Background image is ${supportsWebP ? 'webp' : 'jpg'}` }</h1>
     </div>
   );
 };
