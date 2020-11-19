@@ -7,20 +7,15 @@ To run example clone repo, cd into examples and run yarn start
 
 Example:
 
-<div>
+
 import useWebp  from 'react-use-webp';
 
-const App = () => {
+const { supportsWebP } = useWebp()
 
-  const { supportsWebP } = useWebp()
+//supportsWebp is boolean and can be used with a turnary to return differernt classNames
+//in this example you would have two css classes one named'webp-background' and another named 'jpg-background'
+//each serving a background image of the respective type
 
-
-  return (
-    <div className={supportsWebP ? 'bg-webp' : 'bg-jpg'}>
-      {`Background image is ${supportsWebP ? 'webp' : 'jpg'}` }
-    </div>
-  );
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
-</div>
+<Div className={supportsWebP ? "webp-background" : "jpg-background"}>
+  some content with background image
+</Div>
